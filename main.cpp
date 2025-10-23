@@ -63,7 +63,10 @@ void delete_goat(list<Goat> &trip) {
 }
 
 void display_trip(list<Goat> trip) { 
-
+    int counter = 1;
+    for(auto it = trip.begin(); it != trip.end(); it++) { 
+        cout << "[" << counter << "] " << (*it).get_name() << " (" << (*it).get_age() << ", " << (*it).get_age() << ") " << endl; 
+    }
 }
 
 int main_menu() { 
