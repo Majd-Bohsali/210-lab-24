@@ -1,3 +1,5 @@
+// COMSC210 | lab 23 | Majd Bohsali
+// IDE used: Visual Studio Code
 #include <iostream>
 #include <fstream>
 #include <iomanip>
