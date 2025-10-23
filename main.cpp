@@ -45,9 +45,25 @@ int main() {
             display_trip(trip);
         }
     } while (selection != 4); 
-
    
     return 0;
+}
+
+void add_goat(list<Goat> &trip, string names[], string colors[]) { 
+    string name = names[rand() % SZ_NAMES];
+    int age = rand() % MAX_AGE + 1;
+    string color = colors[rand() % SZ_COLORS];
+
+    Goat goat(name, age, color);
+    trip.push_back(goat); 
+}
+
+void delete_goat(list<Goat> &trip) { 
+
+}
+
+void display_trip(list<Goat> trip) { 
+
 }
 
 int main_menu() { 
