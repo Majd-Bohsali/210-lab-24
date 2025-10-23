@@ -31,7 +31,23 @@ int main() {
     while (fin1 >> colors[i++]);
     fin1.close();
 
-    main_menu(); 
+
+    list<Goat> trip; 
+    int selection; 
+
+    do { 
+        selection = main_menu();
+        if(selection == 1) { 
+            add_goat(trip, names, colors);
+        } else if (selection == 2) { 
+            delete_goat(trip); 
+        } else if (selection == 3) { 
+            display_trip(trip);
+        }
+
+    } while (selection != 4); 
+
+
     return 0;
 }
 
