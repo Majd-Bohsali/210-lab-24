@@ -56,9 +56,16 @@ void add_goat(list<Goat> &trip, string names[], string colors[]) {
 
     Goat goat(name, age, color);
     trip.push_back(goat); 
+    cout << "\tGoat added" << endl;
 }
 
 void delete_goat(list<Goat> &trip) { 
+
+    if(trip.empty()) { 
+        cout << "\tGoat list is currently empty" << endl;
+        return; 
+    }
+
     cout << endl; 
     int selection;
     cout << "Select a goat to delete" << endl; 
@@ -67,7 +74,7 @@ void delete_goat(list<Goat> &trip) {
     cin >> selection;
     while (selection < 1 || selection > trip.size()) { 
         cout << "Invalid choice, please select a valid goat to delete" << endl;
-        cout << "Choice -->";
+        cout << "Choice --> ";
         cin >> selection; 
     }
 
@@ -80,15 +87,21 @@ void delete_goat(list<Goat> &trip) {
 
 void display_trip(list<Goat> trip) { 
     int counter = 1;
-    cout << endl; 
+
+    if(trip.empty()) { 
+        cout << "\tGoat list is currently empty" << endl;
+        return; 
+    }
+
+    cout << "\tCurrent Goats:" << endl;
     for(auto it = trip.begin(); it != trip.end(); it++) { 
         cout << "\t[" << counter << "] " << (*it).get_name() << " (" << (*it).get_age() << ", " << (*it).get_color() << ") " << endl; 
         counter++; 
     }
-    cout << endl; 
 }
  
 int main_menu() { 
+    cout << endl;
     int selection; 
     do { 
         cout << "*** GOAT MANAGER 3001 ***" << endl;
