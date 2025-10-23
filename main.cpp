@@ -68,7 +68,7 @@ void display_trip(list<Goat> trip) {
         cout << "[" << counter << "] " << (*it).get_name() << " (" << (*it).get_age() << ", " << (*it).get_age() << ") " << endl; 
     }
 }
-
+ 
 int main_menu() { 
     int selection; 
     do { 
