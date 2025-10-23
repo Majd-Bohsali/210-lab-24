@@ -44,10 +44,9 @@ int main() {
         } else if (selection == 3) { 
             display_trip(trip);
         }
-
     } while (selection != 4); 
 
-
+   
     return 0;
 }
 
