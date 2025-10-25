@@ -61,7 +61,7 @@ void add_goat(set<Goat> &trip, string names[], string colors[]) {
 void delete_goat(set<Goat> &trip) { 
 
     if(trip.empty()) { 
-        cout << "\tGoat list is currently empty" << endl;
+        cout << "\tGoat set is currently empty" << endl;
         return; 
     }
 
@@ -88,7 +88,7 @@ void display_trip(set<Goat> trip) {
     int counter = 1;
 
     if(trip.empty()) { 
-        cout << "\tGoat list is currently empty" << endl;
+        cout << "\tGoat set is currently empty" << endl;
         return; 
     }
 
