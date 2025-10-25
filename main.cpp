@@ -1,4 +1,4 @@
-// COMSC210 | lab 23 | Majd Bohsali
+// COMSC210 | lab 24 | Majd Bohsali
 // IDE used: Visual Studio Code
 #include <iostream>
 #include <fstream>
@@ -30,7 +30,6 @@ int main() {
     i = 0;
     while (fin1 >> colors[i++]);
     fin1.close();
-
 
     list<Goat> trip; 
     int selection; 
