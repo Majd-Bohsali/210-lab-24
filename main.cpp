@@ -70,7 +70,7 @@ void delete_goat(list<Goat> &trip) {
     int selection;
     cout << "Select a goat to delete" << endl; 
     display_trip(trip);
-    cout << "\tChoice -->";
+    cout << "\tChoice --> ";
     cin >> selection;
     while (selection < 1 || selection > trip.size()) { 
         cout << "Invalid choice, please select a valid goat to delete" << endl;
